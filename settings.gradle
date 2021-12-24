@@ -1,0 +1,2 @@
+rootProject.name='TestCoding_Qtasnim'
+include ':app'

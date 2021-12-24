@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TestCoding_Qtasnim</string>
+    <string name="app_name1">Test Coding PT Qtasnim</string>
+    <string name="menu_transaksi">Transaksi</string>
+    <string name="menu_barang">Barang</string>
+    <string name="menu_jenis_barang">Jenis Barang</string>
+    <string name="app_ver">Copyright @DedeRian</string>
+    <string name="title_page">JUDUL HALAMAN</string>
+    <string name="title_transaksi">TRANSAKSI</string>
+    <string name="title_barang">BARANG</string>
+    <string name="title_jenis_barang">JENIS BARANG</string>
+    <string name="no_data">Tidak ada data untuk ditampilkan!</string>
+    <string name="insert_token">Insert your token here!</string>
+</resources>

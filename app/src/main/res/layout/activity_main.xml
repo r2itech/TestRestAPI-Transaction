@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:theme="@style/AppThemeLogin"
+    tools:context=".activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="100dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_app_name"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="tahoma"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorApp"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="tahoma"
+                        android:text="@string/app_name1"
+                        android:textColor="@color/colorApp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_marginTop="50dp"
+                        android:textColorHint="@color/colorApp"
+                        android:layout_marginHorizontal="50dp"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/et_token"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_border"
+                            android:drawablePadding="26dp"
+                            android:fontFamily="arial"
+                            android:hint="@string/insert_token"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:inputType="text"
+                            android:maxLength="16"
+                            android:paddingVertical="13dp"
+                            android:textAlignment="center"
+                            android:paddingHorizontal="15dp"
+                            android:textColorHint="@color/colorApp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_transaksi"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="80dp"
+                        android:text="@string/menu_transaksi"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="arial"
+                        android:textSize="19sp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/ic_round_btn"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_barang"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="90dp"
+                        android:text="@string/menu_barang"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="arial"
+                        android:textSize="19sp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/ic_round_btn"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_jenis_barang"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="100dp"
+                        android:text="@string/menu_jenis_barang"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="arial"
+                        android:textSize="19sp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/ic_round_btn"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ver"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="arial"
+                android:text="@string/app_ver"
+                android:textColor="@color/colorFooter"
+                android:textSize="14sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
