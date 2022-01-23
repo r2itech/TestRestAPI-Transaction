@@ -40,37 +40,31 @@ public class MainActivity extends AppCompatActivity {
 
     private void setListener()
     {
-        btn_transaksi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String token = et_token.getText().toString().trim();
-                if(token.isEmpty()){
-                    et_token.setError("Masukan Token API!");
-                    return;
-                }
-                v.startAnimation(animAlpha);
-                Intent intent = new Intent(MainActivity.this, BasicActivity.class);
-                intent.putExtra("menu", "transaksi");
-                intent.putExtra("token", token);
-                startActivity(intent);
+        btn_transaksi.setOnClickListener(v -> {
+            String token = et_token.getText().toString().trim();
+            if(token.isEmpty()){
+                et_token.setError("Masukan Token API!");
+                return;
             }
+            v.startAnimation(animAlpha);
+            Intent intent = new Intent(MainActivity.this, BasicActivity.class);
+            intent.putExtra("menu", "transaksi");
+            intent.putExtra("token", token);
+            startActivity(intent);
         });
 
-        btn_barang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String token = et_token.getText().toString().trim();
-                if(token.isEmpty()){
-                    et_token.setError("Masukan Token API!");
-                    return;
-                }
-
-                v.startAnimation(animAlpha);
-                Intent intent = new Intent(MainActivity.this, BasicActivity.class);
-                intent.putExtra("menu", "barang");
-                intent.putExtra("token", token);
-                startActivity(intent);
+        btn_barang.setOnClickListener(v -> {
+            String token = et_token.getText().toString().trim();
+            if(token.isEmpty()){
+                et_token.setError("Masukan Token API!");
+                return;
             }
+
+            v.startAnimation(animAlpha);
+            Intent intent = new Intent(MainActivity.this, BasicActivity.class);
+            intent.putExtra("menu", "barang");
+            intent.putExtra("token", token);
+            startActivity(intent);
         });
 
         btn_jenis_barang.setOnClickListener(new View.OnClickListener() {
